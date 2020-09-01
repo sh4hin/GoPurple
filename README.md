@@ -58,7 +58,7 @@ This project is a simple collection of various shell code injection techniques, 
 A shellcode needs to be generated,this can be done using tools such as [msfvenom](https://www.offensive-security.com/metasploit-unleashed/msfvenom/) or [shad0w](https://github.com/bats3c/shad0w). Then the shellcode needs to be hosted to be remotely downloaded and executed on the remote machine.
 For the sake of clarity, the below demos illustrate different ways of using the tool.
 
-1 - Shellcode injection using PhoneBanan method + Shad0w as the shellcode generator
+1 - Shellcode injection using BananaPhone method + Shad0w as the shellcode generator
 
 ![](demo1.gif)
 
