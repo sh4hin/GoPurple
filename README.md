@@ -43,7 +43,7 @@ This project is a simple collection of various shell code injection techniques, 
          9: CreateRemoteThreadNative
          10: CreateProcessWithPipe
          11: QueueUserAPC
-         12: CreateThreadpoolWaitpool
+         12: CreateThreadpoolWait
          13: BananaPhone
   -u string
         URL hosting the shellcode
