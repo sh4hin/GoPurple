@@ -134,6 +134,8 @@ All the credits go to following guys for their awesome researches,tools and insp
 
 (https://github.com/D00MFist/Go4aRun)
 
+(https://github.com/BishopFox/sliver)
+
 (https://posts.specterops.io/going-4-a-run-eb263838b944)
 
 (https://github.com/C-Sto/BananaPhone)
