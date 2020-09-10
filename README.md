@@ -125,6 +125,7 @@ All the credits go to following guys for their awesome researches,tools and insp
 
 * [chiragsavla94](https://twitter.com/chiragsavla94): Inspired from [ProcessInjection](https://github.com/3xpl01tc0d3r/ProcessInjection)
 
+Thanks to [brimston3](https://twitter.com/brimston3) for his support and contribution
 
 # References
 
