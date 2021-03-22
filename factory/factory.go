@@ -33,6 +33,8 @@ func Run(tech string, url string, pid int, prog string, args string, block strin
 		techniques.RunCreateThreadpoolWait(url)
 	case "13":
 		techniques.RunBananaPhone(url)
+	case "14":
+                techniques.RunEnumerateLoadedModules(url)
 	default:
 		fmt.Printf("The following technique is invalid: %s.\n", tech)
 	}
