@@ -27,7 +27,7 @@ func main() {
 	fmt.Println(banner)
 
 	pidParam := flag.Int("p", 0, "Process ID to inject shellcode into")
-	techParam := flag.String("t", "", "shellcode injection technique to use: \n 1: CreateFiber \n 2: syscall \n 3: CreateThreadNative \n 4: CreateProcess \n 5: EtwpCreateEtwThread \n 6: CreateRemoteThread \n 7: RtlCreateUserThread \n 8: CreateThread \n 9: CreateRemoteThreadNative \n 10: CreateProcessWithPipe \n 11: QueueUserAPC \n 12: CreateThreadpoolWait \n 13: BananaPhone")
+	techParam := flag.String("t", "", "shellcode injection technique to use: \n 1: CreateFiber \n 2: syscall \n 3: CreateThreadNative \n 4: CreateProcess \n 5: EtwpCreateEtwThread \n 6: CreateRemoteThread \n 7: RtlCreateUserThread \n 8: CreateThread \n 9: CreateRemoteThreadNative \n 10: CreateProcessWithPipe \n 11: QueueUserAPC \n 12: CreateThreadpoolWait \n 13: BananaPhone \n 14: EnumerateLoadedModules")
 	urlParam := flag.String("u", "", "URL hosting the shellcode")
 	progParam := flag.String("prog", "", "program to inject into")
 	argsParam := flag.String("a", "", "Program command line arguments")
@@ -40,7 +40,7 @@ func main() {
 		flag.PrintDefaults()
 	}
 
-	var requiredParamsMap = map[string]int{"1": 2, "2": 2, "3": 2, "4": 4, "5": 2, "6": 3, "7": 3, "8": 2, "9": 3, "10": 4, "11": 5, "12": 2, "13": 2}
+	var requiredParamsMap = map[string]int{"1": 2, "2": 2, "3": 2, "4": 4, "5": 2, "6": 3, "7": 3, "8": 2, "9": 3, "10": 4, "11": 5, "12": 2, "13": 2, "14": 2}
 
 	if *techParam == "" || flag.NFlag() != requiredParamsMap[*techParam] {
 		flag.PrintDefaults()
