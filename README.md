@@ -45,6 +45,7 @@ This project is a simple collection of various shell code injection techniques, 
          11: QueueUserAPC
          12: CreateThreadpoolWait
          13: BananaPhone
+         14: EnumerateLoadedModules
   -u string
         URL hosting the shellcode
 
