@@ -46,6 +46,7 @@ This project is a simple collection of various shell code injection techniques, 
          12: CreateThreadpoolWait
          13: BananaPhone
          14: EnumerateLoadedModules
+         15: EnumChildWindows
   -u string
         URL hosting the shellcode
 
