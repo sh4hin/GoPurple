@@ -46,8 +46,8 @@ func RunEnumerateLoadedModules(url string) {
 	}
 	//Calling GetCurrentProcess to get a handle
 	handle, _ := syscall.GetCurrentProcess()
-	enumerateLoadedModules.Call(uintptr(handle),addr,0)
-  if errenum != nil && errenum.Error() != "The operation completed successfully." {
+	_, _, errenum := enumerateLoadedModules.Call(uintptr(handle),addr,0)
+        if errenum != nil && errenum.Error() != "The operation completed successfully." {
 		log.Fatal(fmt.Sprintf("[!]Error calling enumerateLoadedModules:\r\n%s", errenum.Error()))
 	}
 }
