@@ -150,7 +150,7 @@ Thanks to [brimston3](https://twitter.com/brimston3) for his support and contrib
 
 (https://github.com/3xpl01tc0d3r/ProcessInjection)
 
-(https://github.com/S4R1N/AlternativeShellcodeExec/blob/master/EnumerateLoadedModules/EnumerateLoadedModules.cpp)
+(https://github.com/S4R1N/AlternativeShellcodeExec)
 
 
 # Future Plans
@@ -160,7 +160,11 @@ Thanks to [brimston3](https://twitter.com/brimston3) for his support and contrib
 
 
 # Changelog 
-## [1.0] - 2021-03-22
+## [1.0.1] - 2021-03-25
+### Added
+- EnumChildWindows technique
+
+## [1.0.0] - 2021-03-22
 ### Added
 - EnumerateLoadedModules technique
 
