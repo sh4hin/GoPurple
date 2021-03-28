@@ -36,7 +36,9 @@ func Run(tech string, url string, pid int, prog string, args string, block strin
 	case "14":
                 techniques.RunEnumerateLoadedModules(url)
 	case "15":
-                techniques.RunEnumChildWindows(url)  
+                techniques.RunEnumChildWindows(url)
+	case "16":
+                techniques.RunEnumPageFilesW(url)    
 	default:
 		fmt.Printf("The following technique is invalid: %s.\n", tech)
 	}
