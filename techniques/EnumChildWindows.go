@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"github.com/sh4hin/GoPurple/helpers"
 	"golang.org/x/sys/windows"
-  "github.com/lxn/win"
+        "github.com/lxn/win"
 	"log"
 	"unsafe"
 )
