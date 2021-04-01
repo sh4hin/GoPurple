@@ -40,7 +40,7 @@ func main() {
 		flag.PrintDefaults()
 	}
 
-	var requiredParamsMap = map[string]int{"1": 2, "2": 2, "3": 2, "4": 4, "5": 2, "6": 3, "7": 3, "8": 2, "9": 3, "10": 4, "11": 5, "12": 2, "13": 2, "14": 2, "15": 2, "16":, 2}
+	var requiredParamsMap = map[string]int{"1": 2, "2": 2, "3": 2, "4": 4, "5": 2, "6": 3, "7": 3, "8": 2, "9": 3, "10": 4, "11": 5, "12": 2, "13": 2, "14": 2, "15": 2, "16": 2}
 
 	if *techParam == "" || flag.NFlag() != requiredParamsMap[*techParam] {
 		flag.PrintDefaults()
